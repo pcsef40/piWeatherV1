@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.dashboard {
+    width: 100%;
+    max-width: 900px;
+    background: #1f2937;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.eyebrow {
+    color: #60a5fa;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 5px 0;
+}
+
+#date {
+    color: #9ca3af;
+}
+
+.clock {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.muted {
+    color: #9ca3af;
+}
+
+.temperature {
+    font-size: 80px;
+    font-weight: bold;
+
+    margin: 10px 0;
+}
+
+#description {
+    font-size: 22px;
+    text-transform: capitalize;
+
+    margin-bottom: 10px;
+}
+
+.weather-icon img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.stat {
+    background: #374151;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.stat span {
+    display: block;
+    color: #9ca3af;
+    margin-bottom: 8px;
+}
+
+.stat strong {
+    font-size: 24px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #9ca3af;
+    font-size: 13px;
+
+}
+
+@media (max-width: 600px){
+
+    .dashboard {
+        padding: 20px;
+    }
+    header {
+        align-items: flex-start;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .clock{
+        font-size: 22px;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .temperature{
+        font-size: 60px;
+    }
+    .weather-icon img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .stats{
+        grid-template-columns: 1fr;
+    }
+}

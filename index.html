@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device=width, initial-scale=1.0">
+<title>Pi Weather beta</title>
+<link rel="stylesheet" href=""> 
+</head>
+<body>
+    <main class="dashboard">
+        <header>
+            <div>
+                <p class="eyebrow">RPI / Weather</p>
+                <h1 id="city">Timisoara</h1> <!--change your city from Timisoara to your place and the coords-->
+                <p id="date">Loading. . .</p>
+            </div>
+            <div id="clock" class="clock">--:--</div>
+
+        </header>
+
+        <section class="hero">
+            <div>
+                <p class="muted">Actual Temp</p>
+                <div class="temperature">
+                 <span id="temp">--</span><span>°C</span>
+                </div>
+                <p id="description">Loading...</p>
+                <p class="muted">Feels like <span id="feels">--</span>°C</p>
+            </div>
+            <div class="weather-icon" id="icon">
+                Loading
+            </div>
+        </section>
+
+        <section class="stats">
+            <article class="stat">
+                <span>Humidity</span>
+                <strong id="humidity">--%</strong>
+            </article>
+            <article class="stat">
+                <span>Wind</span>
+                <strong id="wind">--m/s</strong>
+            </article>
+            <article class="stat">
+                <span>Pressure</span>
+                <strong id="pressure">-- hPa</strong>
+            </article>
+        </section>
+
+        <footer>
+            <span id="status">Connecting...</span>
+            <span>PI WEATHER V1 </span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
