@@ -6,3 +6,5 @@ P.S: most of the settings are from my hometown, change them by changing the geo 
 
 
 the icons that are present here were from iconarchive.com
+
+🍓thanks for viewing
